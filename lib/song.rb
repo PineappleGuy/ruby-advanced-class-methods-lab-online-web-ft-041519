@@ -44,7 +44,8 @@ class Song
   def self.new_from_filename(string)
     song = string.split(/\.|\s-\s/)
     song.pop
-    song
+    song.shift
+    song.save
   end
 
 end
