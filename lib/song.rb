@@ -38,8 +38,8 @@ class Song
   end
 
   def self.alphabetical
-    array = self.all.sort {|a, b| a.name <=> b.name}
-    array
+    self.all.sort {|a, b| a.name <=> b.name}
+
     end
 
 end
