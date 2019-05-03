@@ -42,14 +42,18 @@ class Song
   end
 
   def self.new_from_filename(string)
-    new_song = self.new
-    song = string.split(/\.|\s-\s/)
-    puts song
-  song.pop
-  puts song
+    song = self.new 
+    song.name = string.split(/\.|\s-\s/)[1]
+    song.artist_name = string.split(/\.|\s-\s/)[0]
+    song
+  end
 
-    new_song.artist_name = song[0]
-    self.new_by_name(song.pop)
+  def self.create_from_filename(string)
+    song = self.new 
+    song.name = string.split(/\.|\s-\s/)[1]
+    song.artist_name = string.split(/\.|\s-\s/)[0]
+    song.save
+    song
   end
 
 
