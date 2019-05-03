@@ -40,7 +40,7 @@ class Song
   def self.alphabetical
     @@all.each do |a<=>b|
       a < b
-    end    
+    end
     end
 
 end
