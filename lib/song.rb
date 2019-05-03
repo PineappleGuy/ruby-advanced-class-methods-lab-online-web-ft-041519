@@ -45,7 +45,7 @@ class Song
     song = string.split(/\.|\s-\s/)
     song.pop
     song = self.new
-    song.name = song
+    song.name = song_at_index[1]
   end
 
 end
