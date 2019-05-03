@@ -47,6 +47,7 @@ class Song
     song.shift
     song = self.new
     song.name = song
+    
   end
 
 end
