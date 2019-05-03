@@ -41,7 +41,6 @@ class Song
     @@all.each do |a<=>b|
       a < b
     end    
-      end
-  end
+    end
 
 end
