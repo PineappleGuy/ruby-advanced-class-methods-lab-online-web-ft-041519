@@ -46,5 +46,6 @@ class Song
     song.pop
     song.shift
     song
+  end
 
 end
