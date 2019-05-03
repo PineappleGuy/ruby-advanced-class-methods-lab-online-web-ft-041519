@@ -33,5 +33,8 @@ class Song
     self.all.find {|song| song.name == string}
   end
 
+  def Song.find_or_create_by_name(string)
+    self.find_by_name(string) || self.create_by_name(string)
+  end
 
 end
