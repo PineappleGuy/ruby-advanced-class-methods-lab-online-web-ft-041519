@@ -37,6 +37,11 @@ class Song
     self.find_by_name(string) || self.create_by_name(string)
   end
 
-  def
+  def self.alphabetical
+    @@all.each do |a<=>b|
+      a < b
+    end    
+      end
+  end
 
 end
