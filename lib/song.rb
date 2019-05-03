@@ -42,12 +42,12 @@ class Song
   end
 
   def self.new_from_filename(string)
+    song = self.new
     song = string.split(/\.|\s-\s/)
     song.pop
-    song.shift
-    song = self.new
-    song.name = song
-    
+    song.artist_name = [0]
+    song.name = [1]
+
   end
 
 end
